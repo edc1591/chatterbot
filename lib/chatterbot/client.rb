@@ -99,7 +99,8 @@ module Chatterbot
     # with a language, etc.
     def default_opts
       opts = {
-        :result_type => "recent"
+        :result_type => "recent",
+        :tweet_mode => "extended"
       }
       opts[:since_id] = since_id if since_id > 0
       opts[:since_id_reply] = since_id_reply if since_id_reply > 0

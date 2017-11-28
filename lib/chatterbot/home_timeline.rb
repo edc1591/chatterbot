@@ -11,8 +11,7 @@ module Chatterbot
 
       opts = {
         :since_id => since_id_home_timeline,
-        :count => 200,
-        :tweet_mode => "extended"
+        :count => 200
       }
       results = client.home_timeline(opts)
 
